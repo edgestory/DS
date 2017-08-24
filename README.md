@@ -1,2 +1,1 @@
-# Rpyvisual
-Visuallization by R &amp; Python
+# collective_Intelligence
