@@ -1,0 +1,13 @@
+name: BMI_shiny
+title: BMI_shiny
+username:
+account: withneo
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 2010751
+bundleId: 2935127
+url: https://withneo.shinyapps.io/BMI_shiny/
+when: 1585372381.73801
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: app.R|chapter1.R

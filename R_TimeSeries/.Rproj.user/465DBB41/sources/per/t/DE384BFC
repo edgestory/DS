@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1582156336133.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1805779358",
+    "id" : "DE384BFC",
+    "lastKnownWriteTime" : 1583075528,
+    "last_content_update" : 1583075528726,
+    "path" : "~/03.PROJ_Matrix/04.R_study/R_TimeSeries/foecasting_class3.R",
+    "project_path" : "foecasting_class3.R",
+    "properties" : {
+        "cursorPosition" : "153,20",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

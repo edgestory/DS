@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1586069955901.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1775111025",
+    "id" : "749425F4",
+    "lastKnownWriteTime" : 1586070593,
+    "last_content_update" : 1586070593131,
+    "path" : "~/03.PROJ_Matrix/04.R_study/r_korea_quiz/201711_1_leading_one.R",
+    "project_path" : "201711_1_leading_one.R",
+    "properties" : {
+        "cursorPosition" : "16,1",
+        "scrollLine" : "11",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 6,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

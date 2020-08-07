@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1585801327223.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3095948252",
+    "id" : "F30B496D",
+    "lastKnownWriteTime" : 1585805481,
+    "last_content_update" : 1585805481609,
+    "path" : "~/03.PROJ_Matrix/04.R_study/r_korea_quiz/201709_1_heatmap.R",
+    "project_path" : "201709_1_heatmap.R",
+    "properties" : {
+        "cursorPosition" : "75,10",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

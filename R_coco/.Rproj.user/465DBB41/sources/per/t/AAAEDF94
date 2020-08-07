@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1585833764185.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1226392131",
+    "id" : "AAAEDF94",
+    "lastKnownWriteTime" : 1586073249,
+    "last_content_update" : 1586073249194,
+    "path" : "~/03.PROJ_Matrix/04.R_study/R_coco/crawling_real_study3_naver_news.R",
+    "project_path" : "crawling_real_study3_naver_news.R",
+    "properties" : {
+        "cursorPosition" : "101,1",
+        "scrollLine" : "50",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 5,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

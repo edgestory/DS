@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1584060248583.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1240729585",
+    "id" : "4805C399",
+    "lastKnownWriteTime" : 1584072984,
+    "last_content_update" : 1584072984164,
+    "path" : "~/03.PROJ_Matrix/04.R_study/R_TimeSeries/forecasting_class6.R",
+    "project_path" : "forecasting_class6.R",
+    "properties" : {
+        "cursorPosition" : "60,16",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 5,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

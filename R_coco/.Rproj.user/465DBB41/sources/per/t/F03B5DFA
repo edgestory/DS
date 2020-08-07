@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1585378372470.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "4|26|26|0|\n",
+    "hash" : "3695673118",
+    "id" : "F03B5DFA",
+    "lastKnownWriteTime" : 1585380819,
+    "last_content_update" : 1585380819863,
+    "path" : "~/03.PROJ_Matrix/04.R_study/R_coco/crawling_real_study2_naver_map.R",
+    "project_path" : "crawling_real_study2_naver_map.R",
+    "properties" : {
+        "cursorPosition" : "39,0",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
