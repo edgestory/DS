@@ -1,0 +1,27 @@
+{
+    "id": "19502C78",
+    "path": "~/GitHub/DS/opendawpy/opendawpy/test.Rmd",
+    "project_path": "test.Rmd",
+    "type": "r_markdown",
+    "hash": "4116128884",
+    "contents": "",
+    "dirty": false,
+    "created": 1597108433886.0,
+    "source_on_save": false,
+    "relative_order": 1,
+    "properties": {
+        "chunk_output_type": "inline",
+        "cursorPosition": "18,86",
+        "last_setup_crc32": "0799E2B686ca2c4c",
+        "scrollLine": "0",
+        "tempName": "Untitled1"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1597109376,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1597109376424,
+    "read_only": false,
+    "read_only_alternatives": []
+}

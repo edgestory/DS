@@ -1,0 +1,4 @@
+"0","library(reticulate)"
+"2","패키지 ‘reticulate’는 R 버전 4.0.2에서 작성되었습니다"
+"0","use_python('C:/Users/Max/Anaconda3/')"
+"0","#use_condaenv(""anaconda3"")"

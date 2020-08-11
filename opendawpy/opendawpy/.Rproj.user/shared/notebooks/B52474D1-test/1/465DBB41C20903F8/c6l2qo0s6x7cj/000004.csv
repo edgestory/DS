@@ -1,0 +1,10 @@
+"0","py_config()
+"
+"1","python:         C:/Users/Max/AppData/Local/r-miniconda/envs/r-reticulate/python.exe
+libpython:      C:/Users/Max/AppData/Local/r-miniconda/envs/r-reticulate/python36.dll
+pythonhome:     C:/Users/Max/AppData/Local/r-miniconda/envs/r-reticulate
+version:        3.6.11 (default, Aug  5 2020, 19:41:03) [MSC v.1916 64 bit (AMD64)]
+Architecture:   64bit
+numpy:          C:/Users/Max/AppData/Local/r-miniconda/envs/r-reticulate/Lib/site-packages/numpy
+numpy_version:  1.19.1
+"
