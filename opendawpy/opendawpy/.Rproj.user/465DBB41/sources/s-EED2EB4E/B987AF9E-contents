@@ -1,5 +1,0 @@
-library(tidyverse)
-
-age = read_csv('age_utf8.csv')
-
-age
