@@ -1,0 +1,17 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+```{r setup, include=FALSE}
+library(reticulate)
+use_python('C:/Users/Max/Anaconda3/')
+#use_condaenv("anaconda3")
+```
+
+
+```{python, echo=T}
+import pandas
+a=pandas.read_csv('C:/Users/Max/Documents/GitHub/DS/opendawpy/opendawpy/age_utf8.csv',encoding='UTF-8')
+print(a)
+```
