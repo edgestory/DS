@@ -1,9 +1,9 @@
 {
-    "path" : "~/03.PROJ_Matrix/04.R_study/R_coco",
-    "sortOrder" : [
+    "path": "~/GitHub/DS/R_coco",
+    "sortOrder": [
         {
-            "ascending" : true,
-            "columnIndex" : 2
+            "columnIndex": 2,
+            "ascending": true
         }
     ]
 }

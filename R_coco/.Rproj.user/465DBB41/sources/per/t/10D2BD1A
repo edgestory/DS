@@ -1,26 +1,25 @@
 {
-    "collab_server" : "",
-    "contents" : "",
-    "created" : 1585375617976.000,
-    "dirty" : false,
-    "encoding" : "UTF-8",
-    "folds" : "",
-    "hash" : "2563789063",
-    "id" : "10D2BD1A",
-    "lastKnownWriteTime" : 1585378363,
-    "last_content_update" : 1585378363249,
-    "path" : "~/03.PROJ_Matrix/04.R_study/R_coco/study1_comunite_site.R",
-    "project_path" : "study1_comunite_site.R",
-    "properties" : {
-        "cursorPosition" : "3,0",
-        "scrollLine" : "0",
-        "tempName" : "Untitled1"
+    "id": "10D2BD1A",
+    "path": "~/GitHub/DS/R_coco/study1_comunite_site.R",
+    "project_path": "study1_comunite_site.R",
+    "type": "r_source",
+    "hash": "2563789063",
+    "contents": "",
+    "dirty": false,
+    "created": 1585375617976.0,
+    "source_on_save": false,
+    "relative_order": 1,
+    "properties": {
+        "cursorPosition": "3,0",
+        "scrollLine": "0",
+        "tempName": "Untitled1"
     },
-    "read_only" : false,
-    "read_only_alternatives" : [
-    ],
-    "relative_order" : 1,
-    "source_on_save" : false,
-    "source_window" : "",
-    "type" : "r_source"
+    "folds": "",
+    "lastKnownWriteTime": 1585378363,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1585378363249,
+    "read_only": false,
+    "read_only_alternatives": []
 }

@@ -1,26 +1,25 @@
 {
-    "collab_server" : "",
-    "contents" : "",
-    "created" : 1586074907429.000,
-    "dirty" : false,
-    "encoding" : "UTF-8",
-    "folds" : "",
-    "hash" : "2967162048",
-    "id" : "725151C6",
-    "lastKnownWriteTime" : 1586075220,
-    "last_content_update" : 1586075220956,
-    "path" : "~/03.PROJ_Matrix/04.R_study/R_coco/processmining.R",
-    "project_path" : "processmining.R",
-    "properties" : {
-        "cursorPosition" : "8,14",
-        "scrollLine" : "0",
-        "tempName" : "Untitled1"
+    "id": "725151C6",
+    "path": "~/GitHub/DS/R_coco/processmining.R",
+    "project_path": "processmining.R",
+    "type": "r_source",
+    "hash": "2967162048",
+    "contents": "",
+    "dirty": false,
+    "created": 1586074907429.0,
+    "source_on_save": false,
+    "relative_order": 4,
+    "properties": {
+        "cursorPosition": "8,14",
+        "scrollLine": "0",
+        "tempName": "Untitled1"
     },
-    "read_only" : false,
-    "read_only_alternatives" : [
-    ],
-    "relative_order" : 4,
-    "source_on_save" : false,
-    "source_window" : "",
-    "type" : "r_source"
+    "folds": "",
+    "lastKnownWriteTime": 1586075220,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1586075220956,
+    "read_only": false,
+    "read_only_alternatives": []
 }
