@@ -109,3 +109,106 @@ ggplot(mpg)+
 ggplot(mpg)+
   geom_point(aes(x=displ, y=hwy))+
   facet_wrap(~class, nrow= 2)
+
+##1.6 연습문제
+
+ggplot(mpg)+
+  geom_point(aes(displ, hwy))
+
+ggplot(mpg)+
+  geom_smooth(aes(displ, hwy))
+
+ggplot(mpg)+
+  geom_smooth(aes(x=displ, y=hwy, linetype=drv))
+
+ggplot(mpg)+
+  geom_smooth(aes(displ, hwy))
+
+ggplot(mpg)+
+  geom_smooth(aes(displ, hwy, group=drv))
+
+ggplot(mpg)+
+  geom_smooth(aes(displ, hwy, color=drv))
+
+ggplot(mpg)+
+  geom_point(aes(x=displ, y=hwy))+
+  geom_smooth(aes(x=displ, y=hwy))
+
+ggplot(mpg, aes(displ, hwy))+
+  geom_point()+
+  geom_smooth()
+
+ggplot(mpg, aes(x=displ, y=hwy))+
+  geom_point(aes(color=class))+
+  geom_smooth()
+
+ggplot(mpg, aes(x=displ, y=hwy))+
+  geom_point(aes(color=class))+
+  geom_smooth(data=filter(mpg, class=='subcompact'), se=FALSE)
+
+##1.6.1 연습문제
+
+###1. 
+ggplot(mpg, aes(x=displ, y=hwy))+
+  geom_line()
+
+ggplot(mpg, aes(y=hwy,group=displ))+
+  geom_boxplot()
+
+###2.
+ggplot(mpg, aes(displ, hwy, color=drv))+
+  geom_point()+
+  geom_smooth(se=FALSE)
+
+###3.
+ggplot(mpg, aes(displ, hwy, color=drv,show.legend = FALSE))+
+  geom_point()+
+  geom_smooth()
+
+###4.
+
+###5.
+ggplot(mpg, aes(x=displ, y=hwy))+
+  geom_point()+
+  geom_smooth()
+
+ggplot()+
+  geom_point(data=mpg, aes(x=displ, y=hwy))+
+  geom_smooth(data=mpg, aes(x=displ, y=hwy))
+
+
+###6.
+
+##1.7 통계적 변환
+ggplot(diamonds)+
+  geom_bar(aes(x=cut))
+
+ggplot(diamonds)+
+  stat_count(aes(x=cut))
+
+demo <- tribble(
+  ~cut, ~freq,
+  "Fair", 1610,
+  "Good", 4906,
+  "Very Good", 12082,
+  "Premium", 13791,
+  "Ideal", 21551
+)
+
+ggplot(demo)+
+  geom_bar(aes(x=cut,y=freq),stat='identity')
+
+ggplot(diamonds)+
+  geom_bar(
+    aes(x=cut, y=..prop.., group=1)
+  )
+
+
+ggplot(diamonds)+
+  stat_summary(
+    mapping=aes(x=cut, y=depth),
+    fun.min = min,
+    fun.max = max,
+    fun = median
+  )
+
