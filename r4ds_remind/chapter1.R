@@ -212,3 +212,71 @@ ggplot(diamonds)+
     fun = median
   )
 
+## 1.7.1 연습문제
+### 1.
+ggplot(diamonds) + geom_bar(aes(x=cut,y=depth),stat = "summary",fun=mean)
+
+
+###2.
+ggplot(diamonds) +geom_col(aes(x=cut,y=depth))
+
+###3.
+
+
+###4.
+
+###5.
+ggplot(diamonds)+
+  geom_bar(aes(x=cut, y=..prop..,group=1))
+
+ggplot(diamonds)+
+  geom_bar(aes(x=cut,group=1,fill=cut,y=..prop..))
+
+##1.8 위치 조정
+
+ggplot(diamonds)+
+  geom_bar(aes(x=cut, color=cut))
+
+ggplot(diamonds)+
+  geom_bar(aes(x=cut, fill=cut))
+
+ggplot(diamonds)+
+  geom_bar(aes(x=cut, fill=clarity))
+
+ggplot(diamonds,aes(x=cut, fill=clarity))+
+  geom_bar(alpha=1/5, position='identity')
+
+ggplot(diamonds,aes(x=cut, color=clarity))+
+  geom_bar(fill=NA, position='identity')
+
+ggplot(diamonds)+
+  geom_bar(aes(x=cut, fill=clarity), position='fill')
+
+ggplot(diamonds)+
+  geom_bar(aes(x=cut, fill=clarity), position='dodge')
+
+ggplot(mpg)+
+  geom_point(
+    aes(x=displ, y=hwy),
+    position='jitter'
+  )
+
+##1.9좌표계
+
+ggplot(mpg, aes(x=class, y=hwy))+
+  geom_boxplot()
+
+ggplot(mpg,aes(class, hwy))+
+  geom_boxplot()+
+  coord_flip()
+
+bar <- ggplot(diamonds)+
+  geom_bar(
+    aes(cut, fill=cut),
+    show.legend = FALSE,
+    width=1
+  )+theme(aspect.ratio = 1)+
+  labs(x=NULL,y=NULL)
+
+bar+coord_flip()
+bar+coord_polar()
