@@ -234,4 +234,77 @@ not_cancelled %>%
     avg_delay2 = mean(arr_delay[arr_delay>0])
   )
 
-not_cancelled 
+not_cancelled %>%
+  group_by(dest) %>% 
+  summarize(distance_sd = sd(distance)) %>% 
+  arrange(desc(distance_sd))
+  
+not_cancelled %>% 
+  group_by(year, month, day) %>% 
+  summarize(
+    first = min(dep_time),
+    last = max(dep_time)
+  )
+
+not_cancelled %>% 
+  group_by(year, month, day) %>%
+  summarize(
+    first_dep = first(dep_time),
+    last_dep = last(dep_time)
+  )
+
+not_cancelled %>% 
+  group_by(year, month, day) %>% 
+  mutate(r=min_rank(desc(dep_time))) %>% 
+  filter(r %in% range(r))
+
+not_cancelled %>% 
+  group_by(dest) %>% 
+  summarize(
+    carriers = n_distinct(carrier)
+  ) %>% 
+  arrange(desc(carriers))
+
+not_cancelled %>% 
+  count(dest)
+
+not_cancelled %>% 
+  count(tailnum, wt = distance)
+
+not_cancelled %>% 
+  group_by(year,month,day) %>% 
+  summarize(n_early=sum(dep_time<500))
+
+not_cancelled %>% 
+  group_by(year, month, day) %>% 
+  summarize(hour_perc = mean(arr_delay>60))
+
+###3.6.5 여러변수로 그룹화
+daily <- group_by(flights, year, month, day)
+(per_day <- summarize(daily, flights=n()))
+
+(per_month <- summarize(per_day, flights =sum(flights)))
+
+(per_year <- summarize(per_month, flights = sum(flights)))
+
+### 3.6.6 그룹화 해제
+daily %>% 
+  ungroup() %>% 
+  summarize(flights=n())
+
+### 3.7 그룹화 뮤테이트(와 필터링)
+flights_sml %>% 
+  filter(rank(desc(arr_delay))<10)
+
+popular_dests <- flights %>% 
+  group_by(dest) %>% 
+  filter(n()>365)
+popular_dests
+
+popular_dests %>% 
+  filter(arr_delay>0) %>% 
+  mutate(prop_delay = arr_delay/sum(arr_delay)) %>% 
+  select(year:day, dest, arr_delay, prop_delay)
+
+
+
