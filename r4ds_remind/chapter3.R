@@ -233,3 +233,5 @@ not_cancelled %>%
     avg_delay1 = mean(arr_delay),
     avg_delay2 = mean(arr_delay[arr_delay>0])
   )
+
+not_cancelled 
