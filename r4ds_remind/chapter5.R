@@ -73,3 +73,90 @@ nycflights13::flights %>%
     binwidth = 1/4
   )
 
+### 5.5.1 범주형 변수와 연속형 변수
+ggplot(diamonds, aes(x=price))+
+  geom_freqpoly(aes(color=cut), binwidth=500)
+
+ggplot(diamonds)+
+  geom_bar(aes(x=cut))
+
+diamonds %>% 
+  ggplot(aes(price, ..density..))+
+  geom_freqpoly(aes(color=cut),binwidth=500)
+
+diamonds %>% 
+  ggplot(aes(cut, price))+
+  geom_boxplot()
+
+ggplot(mpg, aes(class, hwy))+
+  geom_boxplot()
+
+ggplot(mpg)+
+  geom_boxplot(
+    aes(
+      x= reorder(class, hwy, FUN=median),
+      y=hwy
+    )
+  )
+
+ggplot(mpg)+
+  geom_boxplot(
+    aes(
+      x= reorder(class, hwy, FUN=median),
+      y=hwy
+    )
+  )+
+  coord_flip()
+
+## 5.5.3 두개의 범주형 변수
+ggplot(diamonds)+
+  geom_count(aes(cut, color))
+
+diamonds %>% 
+  count(color,cut)
+
+diamonds %>% 
+  count(color, cut) %>% 
+  ggplot(aes(color, cut))+
+  geom_tile(aes(fill=n))
+
+diamonds %>% 
+  ggplot(aes(carat,price))+
+  geom_point()
+
+diamonds %>% 
+  ggplot(aes(carat, price))+
+  geom_point(
+    aes(carat, price),
+    alpha=1/100
+  )
+
+ggplot(smaller)+
+  geom_bin2d(aes(carat, price))
+
+#install.packages("hexbin")
+ggplot(smaller)+
+  geom_hex(aes(carat, price))
+
+ggplot(smaller, aes(y=price,group=cut_width(carat,0.1)))+
+  geom_boxplot()
+
+###5.6 패턴과 모델
+ggplot(faithful)+
+  geom_point(aes(x=eruptions, y=waiting))
+
+library(modelr)
+
+mod <- lm(log(price)~ log(carat), data=diamonds)
+mod
+
+diamonds2 <- diamonds %>% 
+  add_residuals(mod) %>% 
+  mutate(resid = exp(resid))
+
+ggplot(diamonds2)+
+  geom_point(aes(x=carat, y=resid))
+
+ggplot(diamonds2)+
+  geom_boxplot(aes(cut, resid))
+
