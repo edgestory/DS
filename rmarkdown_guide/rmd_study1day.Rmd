@@ -1,0 +1,20 @@
+---
+title: "Hello R Markdown"
+author : "GC.jeong"
+date : "2020-11-17"
+output: html_document1:
+  toc:true
+  pdf_document:
+    keep_tex : true
+---
+
+```{r }
+fit = lm(dist ~ speed, data = cars)
+b=coef(fit)
+plot(cars)
+abline(fit)
+```
+
+The slope of the regression is `r b[1]`.
+
+
